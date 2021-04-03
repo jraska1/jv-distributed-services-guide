@@ -1,0 +1,10 @@
+
+node:
+  name: node03
+  id: local:${node.name}
+
+server:
+  port: 8083
+
+provider:
+  queue: QUEUE-3

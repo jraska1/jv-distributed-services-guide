@@ -1,0 +1,35 @@
+
+spring:
+  profiles:
+    group:
+      node00:
+      node01:
+        - "applicant"
+      node02:
+        - "provider"
+      node03:
+        - "provider"
+      node04:
+        - "auditor"
+      node05:
+        - "conductor"
+      node06:
+        - "repository"
+  activemq:
+    broker-url: tcp://localhost:61616
+    packages:
+      trustAll: True
+
+routes:
+  applicants:
+    checkerInterval: 100
+
+services:
+  audit:
+    uri: activemq:topic:AUDIT
+  conduct:
+    uri: activemq:topic:CONDUCT
+  repository:
+    uri: activemq:queue:REPOSITORY
+  configurable:
+    uri: activemq:topic:CONFIGURE

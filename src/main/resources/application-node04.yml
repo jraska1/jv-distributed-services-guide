@@ -1,0 +1,7 @@
+
+node:
+  name: node04
+  id: local:${node.name}
+
+server:
+  port: 8084

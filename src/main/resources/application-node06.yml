@@ -1,0 +1,7 @@
+
+node:
+  name: node06
+  id: local:${node.name}
+
+server:
+  port: 8086

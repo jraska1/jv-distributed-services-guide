@@ -1,0 +1,10 @@
+
+node:
+  name: node02
+  id: local:${node.name}
+
+server:
+  port: 8082
+
+provider:
+  queue: QUEUE-2

@@ -1,0 +1,10 @@
+
+node:
+  name: node01
+  id: local:${node.name}
+
+server:
+  port: 8081
+
+applicant:
+  destinations: QUEUE-1, QUEUE-2, QUEUE-3

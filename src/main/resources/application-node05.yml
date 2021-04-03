@@ -1,0 +1,11 @@
+
+node:
+  name: node05
+  id: local:${node.name}
+
+server:
+  port: 8085
+
+conduct:
+  timestamp:
+    period: 10000
